@@ -3,17 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <h1>Rock Paper Scissors (First To 5)</h1>
-        <button id="rock">Rock!</button>
-        <button id="paper">Paper!</button>
-        <button id="scissor">Scissors!</button>
+        <div class="buttons">
+            <button id="rock">Rock!</button>
+            <button id="paper">Paper!</button>
+            <button id="scissor">Scissors!</button>
+        </div>
         
-        <div class="humanScore">Human: 0</div>
-        <div class="computerScore">Computer: 0</div>
-        <div class="result">Round Winner: </div>
-        <div class="gameOver">Game Winner: </div>
+        <div class="computer">Computer: </div>
+        <div class="humanScore temp">Human: 0</div>
+        <div class="computerScore temp">Computer: 0</div>
+        <div class="result temp">Round Winner: </div>
+        <div class="gameOver temp">Game Winner: </div>
     </body>
     <script src="rockPaperScissors.js"></script>
 </html>
