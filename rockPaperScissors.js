@@ -6,14 +6,19 @@ let computerScore = 0;
 let getRandomInt = () => Math.floor(Math.random() * 3);
 
 function computerPlay(){
+    const box = document.querySelector(".computer");
     let x = getRandomInt();
+
     if(x === 0){
+        box.textContent = "Computer: Paper!";
         return "Paper";
     }
     else if(x === 1){
+        box.textContent = "Computer: Rock!";
         return "Rock";
     }
     else{
+        box.textContent = "Computer: Scissors!";
         return "Scissor";
     }
 }
